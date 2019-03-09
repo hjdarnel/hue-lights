@@ -32,6 +32,11 @@ const toggle = async (client, group) => {
     client.groups.save(group);
 };
 
+const on = async (client, group) => {
+    group.on = true;
+    client.groups.save(group);
+};
+
 try {
     init()
         .then((client) => {
@@ -45,6 +50,9 @@ try {
                 switch (process.argv[2]) {
                     case "scene":
                         setScene(client, process.argv[3]);
+                        break;
+                    case "on":
+                        on(client, group);
                         break;
                     default:
                         break;
