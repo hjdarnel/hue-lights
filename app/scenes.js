@@ -5,6 +5,10 @@ const setScene = async (client, sceneName) => {
                 client.scenes.recall("SfXGev5SCCi2j1o");
                 break;
 
+            case "aesthetic":
+                client.scenes.recall("rCvSfDEflpLjOKM");
+                break;
+
             case "arctic-aurora":
                 client.scenes.recall("4Xea4XmitswwKUO");
 
